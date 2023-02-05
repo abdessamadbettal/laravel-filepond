@@ -20,6 +20,7 @@ class CreateFilepondsTable extends Migration
             $table->string('extension', 100);
             $table->string('mimetypes', 100);
             $table->string('disk', 100);
+             $table->string('size', 200);
             $table->unsignedBigInteger('created_by')->nullable();
             $table->dateTime('expires_at')->nullable();
             $table->softDeletes();
